@@ -22,7 +22,7 @@ class DingRobot:
                 "msgtype": "link",
                 "link": {
                     "text": "账号jenkisn5,密码123456",
-                    "title": "," + datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+                    "title": "，" + datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                     "picUrl": "",
                     "messageUrl": "http://admin:Aa123456!@123.57.2.141:9000/job/Autoapi/allure/"
                 }
