@@ -6,9 +6,8 @@ import requests
 
 class DingRobot:
     def __init__(self):
-        self.allure = "http://jenkisn5:123456@8.129.214.240:9000/job/wework/allure/widgets/suites.json"
-        self.ding = 'https://oapi.dingtalk.com/robot/send?access_token=' \
-                    'a5eb6e38be242dcf3a0ceaa1035a8c3093430de8da7384bf0b710711d4885c49'
+        self.allure = "http://admin:Aa123456!@123.57.2.141:9000/job/Autoapi/allure/widgets/suites.json"
+        self.ding = 'https://oapi.dingtalk.com/robot/send?access_token=42ca91c90da3f450aa09488b7676365b76e0b404f0968c03be039f7d19a40196'
         self.error = self.get_allure_error()
 
     def get_allure_error(self):
@@ -23,9 +22,9 @@ class DingRobot:
                 "msgtype": "link",
                 "link": {
                     "text": "账号jenkisn5,密码123456",
-                    "title": "猛犸象" + datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+                    "title": "," + datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
                     "picUrl": "",
-                    "messageUrl": "http://jenkisn5:123456@8.129.214.240:9000/job/wework/allure/"
+                    "messageUrl": "http://admin:Aa123456!@123.57.2.141:9000/job/Autoapi/allure/"
                 }
             }
             response = requests.post(self.ding, headers=headers, data=json.dumps(content))

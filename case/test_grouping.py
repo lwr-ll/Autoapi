@@ -45,9 +45,10 @@ class TestGrouping:
         id = self.group.jme_json(a, r.json())
         res = self.group.delete_group(id)
         assert res.status_code == check
+        assert res.status_code == 123
 
 
-    @pytest.mark.smoke
+@pytest.mark.smoke
     def test_all_group(self):
         self.group.create_group("小张")
         r = self.group.get_list(1)
